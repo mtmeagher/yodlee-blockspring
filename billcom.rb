@@ -29,7 +29,7 @@ transfer = []
 arr_arrs = CSV.read("/Users/mychung/Downloads/rpt0810210643.csv")
 arr_arrs.each do |lines|
    cleanlines=lines.reject{ |cell| cell == nil }
-   if cleanlines.size==6 #standard withdrawaltransaction
+   if cleanlines.size==7 #standard withdrawaltransaction
      payments.push cleanlines
    elsif cleanlines.size==2
      if cleanlines.include? "Subtotal:"
